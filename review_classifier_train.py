@@ -14,7 +14,7 @@ import numpy as np
 
 data = keras.datasets.imdb  # preprocessed data with each word in the review encoded as a word index
 
-(train_data, train_labels), (test_data, test_labels) = data.load_data(num_words= 880000)
+(train_data, train_labels), (test_data, test_labels) = data.load_data(num_words= 88000)
 
 word_index = data.get_word_index()      # convert word_index to word
 
@@ -36,7 +36,7 @@ def decode_review(text):
 #===========================================START TRAINING===========================================
 
 model = keras.Sequential()
-model.add(keras.layers.Embedding(880000, 16))
+model.add(keras.layers.Embedding(88000, 16))
 model.add(keras.layers.GlobalAveragePooling1D())
 model.add(keras.layers.Dense(16, activation = 'relu'))
 model.add(keras.layers.Dense(1, activation = 'sigmoid'))    # between 0 and 1

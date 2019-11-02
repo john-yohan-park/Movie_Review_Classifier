@@ -1,5 +1,5 @@
 # Review_Classifier
-Classifies a movie review as either positive or negative by building a neural network using:
+Classifies a movie review as either positive or negative by building a neural network using
 - Global average pooling
 - Rectified linear units activation function
 - Sigmoid activation function

@@ -1,11 +1,10 @@
 # Review_Classifier
-Builds a neural network using
+Classifies a movie review as either positive or negative by building a neural network using:
 - Global average pooling
 - Rectified linear units activation function
 - Sigmoid activation function
 - Adam optimizer algorithm
-- Binary cross-entropy loss function 
-to classify a movie review as having either positive or negative sentiment
+- Binary cross-entropy loss function
 
 Written in Python
 
